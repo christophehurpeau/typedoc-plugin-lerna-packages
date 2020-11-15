@@ -1,5 +1,5 @@
 {
-  "name": "typedoc-plugin-lerna-packages",
+  "name": "@chrp/typedoc-plugin-lerna-packages",
   "version": "0.3.1",
   "description": "Display Typescript documentation for Lerna monorepo with the correct module exports.",
   "main": "dist/index.js",
@@ -14,7 +14,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/marcj/typedoc-plugin-lerna-packages"
+    "url": "https://github.com/christophehurpeau/typedoc-plugin-lerna-packages"
   },
   "author": "Marc J. Schmidt <marc@marcjschmidt.de>",
   "license": "MIT",

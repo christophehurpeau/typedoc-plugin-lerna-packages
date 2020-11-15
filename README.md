@@ -1,4 +1,6 @@
-## typedoc-plugin-lerna-packages
+## @chrp/typedoc-plugin-lerna-packages
+
+Fork of [typedoc-plugin-lerna-packages](https://github.com/marcj/typedoc-plugin-lerna-packages)
 
 A plugin for [Typedoc](http://typedoc.org) that groups all Lerna packages
 into own TS module. Normally Typedoc handles each file as a module, this
@@ -13,8 +15,8 @@ Example source code: https://github.com/marcj/marshal.ts
 Just install it and type `typedoc`:
 
 ```bash
-npm i -D typedoc-plugin-lerna-packages typedoc@~0.16
-# yarn add -D typedoc-plugin-lerna-packages typedoc@0.16 --tilde
+npm i -D typedoc-plugin-lerna-packages typedoc
+# yarn add -D typedoc-plugin-lerna-packages typedoc
 
 npx typedoc
 # yarn typedoc
@@ -24,11 +26,11 @@ Example `typedoc.js` in your root folder
 
 ```js
 module.exports = {
-  mode: 'modules',
-  out: 'docs',
-  exclude: ['**/node_modules/**', '**/*.spec.ts'],
-  name: 'MY NAME',
-  excludePrivate: true
+  mode: "modules",
+  out: "docs",
+  exclude: ["**/node_modules/**", "**/*.spec.ts"],
+  name: "MY NAME",
+  excludePrivate: true,
 };
 ```
 
@@ -41,7 +43,7 @@ module.exports = {
   //...
 
   //exclude packages from being generated
-  lernaExclude: ['@vendor/integration-tests', '@vendor/examples']
+  lernaExclude: ["@vendor/integration-tests", "@vendor/examples"],
 };
 ```
 
